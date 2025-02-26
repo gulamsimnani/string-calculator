@@ -4,7 +4,7 @@ class StringCalculator {
   
       let delimiters = [",", "\n"];
       let customDelimiterMatch = numbers.match(/^\/\/(.*)\n/);
-      
+  
       if (customDelimiterMatch) {
         let customDelimiters = customDelimiterMatch[1]
           .slice(1, -1)
@@ -45,3 +45,4 @@ class StringCalculator {
   } catch (e) {
     console.error(e.message); // "Negative numbers not allowed: -1, -3"
   }
+  
